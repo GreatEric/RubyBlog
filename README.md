@@ -9,6 +9,10 @@ rails version: Rails 5.2.3
 
 ##### create a new project
 
-$ rails new blog
+$ rails new RubyBlog
+
+##### start project
+
+$ rails s
 
 
