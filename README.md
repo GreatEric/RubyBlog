@@ -59,6 +59,24 @@ article.destroy
 rake routes
 
 
+##### create user table
 
+$ rails g migration create_users
 
+update columns
 
+goto directory:
+db/migrate/20190802034934_create_users.rb
+
+class CreateUsers < ActiveRecord::Migration[5.1]
+  def change
+    create_table :users do |t|
+     t.string :username
+     t.string :email
+     t.timestamps
+    end
+  end
+end
+
+then:
+$ rake db:migrate
